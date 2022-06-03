@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Fay Home Page</title>
+
+    <link id= "icon" rel = "icon" href = "img/redAF.png">
+    <link id= "style" rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div id = "nav">
+                <a href = "index.html" class = "navLink">Home</a></li>
+                <a href = "experiences.html" class = "navLink">Experience</a></li>
+                <a href = "work.html" class = "navLink">My Work</a></li>
+                <button id="blueButton" onClick = "swapStyleSheetBlue('blue.css')"></button>
+                <button id="redButton" onClick = "swapStyleSheetRed('style.css')"></button>
+        </div>
+        <div class= "logo">
+            <img id="red" src="img/redAF.png" alt ="logo">
+            <img id="blue" src="img/blueAF.png" alt ="logo">
+        </div>
+    </header>
+
+    <!--Introduction-->
+    <section class="Intro" id = "home">
+        <!--Applying two class names for easier altering when using the same class name for different html pages-->
+        <h1 class = "sectionTitle sectionTitleIntro">
+            Hello! I am <strong>Andrew Fay</strong>
+        </h1>
+        <p class="sectionSubtitle sectionSubtitleIntro">full-time student</p>
+        <p class = "para1">I am a passionate computer science student with a deeper interest in hardware and its integration with software capabilities. 
+            I love solving complex problems and find value in the successes that are born from the failures I have endured. 
+            Although I do not have much experience in the field, I can assure you that the projects I have completed shaped me into an adequate and engaged learner. 
+            My curiosity knows no bounds, and I don’t hesitate to ask questions when I am eager to find out how things function.</p>
+    </section>
+    <!--About Me-->
+    <section class = "aboutMe" id="about">
+        <h2 class = "sectionTitle sectionTitleAbout"> Who I Am</h2>
+        <p class = "sectionSubtitle sectionSubtitleAbout">part-time meat slicer</p>
+
+        <div class="aboutMeBody">
+            <p class = "para2"> My background and inspiration to pursue a career in computer science began in high school as I took a four-year electronics course where we learned the basics of analog and digital components, 
+                and completed fun projects where we put our knowledge to the test. 
+                It was satisfying seeing something I created with my own two hands come to life and either succeed or fail based on my implementation.
+            </p>
+            <p class = "para3"> Throughout my four years in college, I have worked at Market Basket in the deli department to make ends meet (no pun intended). 
+                Over the years there I have learned hard work and determination go a long way, having to deal with difficult customers and finding solutions to everyday problems. 
+            </p>
+            <p class = "para4"> When I am not working, I enjoy being active by either going to the gym or going for walks, usually dependent on the ever-changing weather on the east coast. 
+                Some hobbies I enjoy are working on my car, photography, fishing, drawing, and playing video games.
+            </p>
+        </div>
+     <img src="img/Scion.jpg" alt="Andrew's car" id="car">
+</section>
+
+    <!--Footer-->
+    <footer>
+        <a href = "mailto:andrewafay@gmail.com" class="footerLink">andrewafay@gmail.com</a>
+            <ul class = "socialList">
+                <li class = "socialListItem"><a class="socialListLink" href = "https://www.instagram.com/19fay99/" target="_blank"><img src="img/Insta.png" alt="instagram"></a></li>
+                <li class = "socialListItem"><a class="socialListLink" href = "https://github.com/19fay99" target="_blank"><img src="img/git.png" alt= "github"></a></li>
+                <li class = "socialListItem"><a class="socialListLink" href = "https://www.linkedin.com/in/andrew-fay-matseas-69339a234/" target="_blank"><img src="img/Linkedin.png" alt= "linkedin"></a></li>
+            </ul>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>

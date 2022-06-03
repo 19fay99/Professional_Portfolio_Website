@@ -1,0 +1,271 @@
+/*Universal box sizing*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*I had to look up how to do this in an attempt to not have to keep re-defining the same color, font size, and font type repeatedly*/
+/*Pre-defining variables for easy swap in and out of colors along with font sizes*/
+/*Allows easy application of css style to each webpage with a consistent color scheme in my opinion*/
+/*By doinng this I also believe it to have made my life much easier when swapping style sheets on the fly with my JavaScript code*/
+:root{
+    --ff-primary: Courier;
+    --ff-secondary:monospace;
+
+    --fw-reg: 300;
+    --fw-bold:900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #ec1c1c;
+
+    --fs-h1:48px;
+    --fs-h2:36px;
+    --fs-h3:20px;
+    --fs-body:16px;
+}
+
+#nav{
+    background-color: var(--clr-dark);
+    position: fixed; 
+    width: 100%;
+    transition: top 0.3s;
+    top:-10x;
+    z-index: 1;
+}
+
+#nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+a, a:link, a:visited {
+    color:var(--clr-dark);
+  }
+
+body{
+    background:var(--clr-light);
+    color:var(--clr-dark);
+    margin:0;
+    font-family:var(--ff-primary);
+    font-size:var(--fs-body);
+    line-height:1.6;
+
+}
+
+section{
+    padding:80px 32px;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+h1, h2, h3{
+    line-height: 1.1;
+    margin:0;
+}
+
+h1{font-size:var(--fs-h1)}
+h2{font-size:var(--fs-h2)}
+h3{font-size:var(--fs-h3)}
+
+.sectionTitle{
+    margin-bottom: 4px;
+}
+
+.sectionTitleIntro{
+    font-weight: var(--fw-reg);
+}
+
+.sectionSubtitle{
+    margin:0;
+    font-size:var(--fs-h3);
+}
+
+.sectionSubtitleIntro, .sectionSubtitleAbout{
+    background:var(--clr-accent);
+    font-family:var(--ff-secondary);
+}
+
+.experiences{
+    background-color:var(--clr-dark);
+    background-image:url();
+    background-size:cover;
+    color:var(--clr-light);
+    text-align:center;
+}
+
+.sectionTitleExperience::after{
+    content: " ";
+    display:block;
+    width:25%;
+    height: 1px;
+    margin: 8px auto 16px;
+    background:var(--clr-light);
+    opacity:0.5;
+}
+
+.sectionTitleWork::after{
+    content: " ";
+    display:block;
+    width:25%;
+    height: 1px;
+    margin: 8px auto 16px;
+    background:var(--clr-light);
+    opacity:0.5;
+}
+
+footer{
+    background:var(--clr-dark);
+    color:var(--clr-accent);
+    text-align:center;
+    padding:40px 0;
+
+}
+
+.footerLink:link{
+    font-size: var(--fs-h3);
+    color:var(--clr-accent);
+    justify-content: center;
+}
+
+.socialList{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    margin:32px 0;
+    padding:0;
+    color:var(--clr-accent);
+}
+
+.socialListItem{
+  margin: 0 16px;
+
+}
+
+#blueButton{
+    background-color:  #1c42ec;
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    border-color: black;
+    position: relative;
+    top:15px;
+    left:5px;
+}
+
+#blueButton:hover{
+    cursor: pointer;
+    border-color: #ddd;
+    color: black;
+}
+
+#redButton{
+    background-color: #ec1c1c;
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    border-color: black;
+    position: relative;
+    top:15px
+}
+
+#redButton:hover{
+    cursor: pointer;
+    border-color: #ddd;
+    color: black;
+}
+
+p.para1{
+    font-family:var(--ff-secondary);
+}
+
+.aboutMeBody{
+    font-family:var(--ff-secondary);
+}
+
+#red{
+    width:100px;
+    height: auto;
+    position:relative;
+    top:50px;
+}
+
+#blue{
+    width:100px;
+    height: auto;
+    display:none;
+    position:relative;
+    top:50px;
+}
+
+#car{
+    width:750px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.experience{
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.sectionSubtitleWork{
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 32px;
+}
+
+.myWork{
+    background-color:var(--clr-dark);
+    color:var(--clr-light);
+    text-align: center;
+    font-size: 20px;
+}
+
+.portfoliopics{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.portitem{
+    background:var(--clr-accent);
+    overflow: hidden;
+}
+
+.portimage{
+    width: auto;
+    height: 100%;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+    opacity: 250ms linear;
+}
+
+.portimage:hover{
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+#reportTitle{
+    position:relative;
+    top:60px;
+    text-align: center;
+}
+
+.colorTitle{
+    color: var(--clr-accent);
+}

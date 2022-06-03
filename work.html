@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Fay's Work</title>
+
+    <link id= "icon" rel = "icon" href = "img/redAF.png">
+    <link id= "style" rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div id = "nav">
+                <a href = "index.html" class = "navLink">Home</a></li>
+                <a href = "experiences.html" class = "navLink">Experience</a></li>
+                <a href = "work.html" class = "navLink">My Work</a></li>
+                <button id="blueButton" onClick = "swapStyleSheetBlue('blue.css')"></button>
+                <button id="redButton" onClick = "swapStyleSheetRed('style.css')"></button>
+        </div>
+        <div class= "logo">
+            <img id="red" src="img/redAF.png" alt ="logo">
+            <img id="blue" src="img/blueAF.png" alt ="logo">
+        </div>
+    </header>
+
+     <!--My Work-->
+     <section class= "myWork" id = "work">
+        <h2 class = "sectionTitle sectionTitleWork">My Work</h2>
+        <p class = "sectionSubtitleWork">A Portion of Some Completed Projects</p>
+
+        <div class="portfoliopics">
+             <!--Portfolio picture 01-->
+             <a href="#" class="portitem">
+                <img src="img/Kick.png" alt="kickboxesgame" class="portimage">
+            </a>
+
+            <!--Portfolio picture 02-->
+            <a href="#" class="portitem">
+                <img src="img/customPCB.jpg" alt="PCB" class="portimage">
+            </a>
+
+            <!--Portfolio picture 03-->
+            <a href="#" class="portitem" id="noisebox">
+                <img src="img/noisebox.jpg" alt="Noise Box" class="portimage">
+            </a>
+
+            <!--Portfolio picture 04-->
+            <a href="#" class="portitem">
+                <img src="img/Turtleboy_Main_630x500.png" alt="turtleboygame" class="portimage">
+            </a>
+        </div>
+
+        <div class="portfoliovids">
+            <!--Portfolio video 01-->
+            <video controls="controls" width="800" height="600" name="kickboxes">
+                <source src="vid/Kick Boxes gameplay.mp4">
+              </video>
+
+            <!--Portfolio video 02-->
+            <video controls="controls" width="800" height="600" name="pcbvid">
+                <source src="vid/PCB.mov">
+              </video>
+
+            <!--Portfolio video 03-->
+            <video controls="controls" width="800" height="600" name="noiseboxvid">
+                <source src="vid/noisebox.mp4">
+              </video>
+
+             <!--Portfolio video 04-->
+            <video controls="controls" width="800" height="600" name="turtleboy">
+                <source src="vid/Turtleboy_ Back to School.mp4">
+              </video>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href = "mailto:andrewafay@gmail.com" class="footerLink">andrewafay@gmail.com</a>
+            <ul class = "socialList">
+                <li class = "socialListItem"><a class="socialListLink" href = "https://www.instagram.com/19fay99/" target="_blank"><img src="img/Insta.png" alt="instagram"></a></li>
+                <li class = "socialListItem"><a class="socialListLink" href = "https://github.com/19fay99" target="_blank"><img src="img/git.png" alt= "github"></a></li>
+                <li class = "socialListItem"><a class="socialListLink" href = "https://www.linkedin.com/in/andrew-fay-matseas-69339a234/" target="_blank"><img src="img/Linkedin.png" alt= "linkedin"></a></li>
+            </ul>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
